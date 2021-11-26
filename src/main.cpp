@@ -2,9 +2,14 @@
 #include <pybind11/pybind11.h>
 #include <cmath>
 #include <tuple>
+#include <vector>
+#include <pybind11/stl.h>
 
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
+
+typedef std::tuple<double, double> point_geo;
+typedef std::tuple<point_geo, point_geo> pair_point_geo;
 
 double to_radians(double val) {
     return val * M_PI / 180.0;
@@ -26,6 +31,14 @@ double haversine(std::tuple<double, double> source, std::tuple<double, double> d
     return EARTH_RADIUS_IN_METERS * c;
 }
 
+std::vector<double> bulk_haversine(std::vector<pair_point_geo> pairs) {
+    std::vector<double> distances;
+    for (pair_point_geo pair : pairs){
+        distances.push_back(haversine(std::get<0>(pair), std::get<1>(pair)));
+    }
+    return distances;
+}
+
 namespace py = pybind11;
 
 PYBIND11_MODULE(pyhaversine, m) {
@@ -42,6 +55,10 @@ PYBIND11_MODULE(pyhaversine, m) {
     )pbdoc";
 
     m.def("haversine", &haversine, R"pbdoc(
+        TODO doc
+    )pbdoc");
+
+    m.def("bulk_haversine", &bulk_haversine, R"pbdoc(
         TODO doc
     )pbdoc");
 
