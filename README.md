@@ -1,4 +1,4 @@
-pyhaversine
+pyHaversine
 ==============
 
 [![Gitter][gitter-badge]][gitter-link]
@@ -26,7 +26,7 @@ pyhaversine
 <!-- TODO: get a real badge link for appveyor -->
 [appveyor-badge]:          https://travis-ci.org/pybind/pyhaversine.svg?branch=master&status=passed
 
-An example project built with [pybind11](https://github.com/pybind/pybind11).
+An simple project built with [pybind11](https://github.com/pybind/pybind11).
 This requires Python 3.6+; for older versions of Python, check the commit
 history.
 
@@ -45,7 +45,7 @@ using [`cibuildwheel`][]. You can also see a basic recipe for building and
 testing in `pip.yml`, and `conda.yml` has an example of a conda recipe build.
 
 
-Building the documentation
+Building the documentation (no available)
 --------------------------
 
 Documentation for the example project is generated using Sphinx. Sphinx has the

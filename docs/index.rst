@@ -1,4 +1,4 @@
-pyhaversine Documentation
+pyHaversine Documentation
 ============================
 
 Contents:
@@ -6,4 +6,4 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   pyhaversine
+   pyHaversine
