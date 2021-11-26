@@ -1,31 +1,6 @@
 pyHaversine
 ==============
 
-[![Gitter][gitter-badge]][gitter-link]
-
-|      CI              | status |
-|----------------------|--------|
-| Linux/macOS Travis   | [![Travis-CI][travis-badge]][travis-link] |
-| MSVC 2015            | [![AppVeyor][appveyor-badge]][appveyor-link] |
-| conda.recipe         | [![Conda Actions Status][actions-conda-badge]][actions-conda-link] |
-| pip builds           | [![Pip Actions Status][actions-pip-badge]][actions-pip-link] |
-| [`cibuildwheel`][]   | [![Wheels Actions Status][actions-wheels-badge]][actions-wheels-link] |
-
-[gitter-badge]:            https://badges.gitter.im/pybind/Lobby.svg
-[gitter-link]:             https://gitter.im/pybind/Lobby
-[actions-badge]:           https://github.com/pybind/pyhaversine/workflows/Tests/badge.svg
-[actions-conda-link]:      https://github.com/pybind/pyhaversine/actions?query=workflow%3A%22Conda
-[actions-conda-badge]:     https://github.com/pybind/pyhaversine/workflows/Conda/badge.svg
-[actions-pip-link]:        https://github.com/pybind/pyhaversine/actions?query=workflow%3A%22Pip
-[actions-pip-badge]:       https://github.com/pybind/pyhaversine/workflows/Pip/badge.svg
-[actions-wheels-link]:     https://github.com/pybind/pyhaversine/actions?query=workflow%3AWheels
-[actions-wheels-badge]:    https://github.com/pybind/pyhaversine/workflows/Wheels/badge.svg
-[travis-link]:             https://travis-ci.org/pybind/pyhaversine
-[travis-badge]:            https://travis-ci.org/pybind/pyhaversine.svg?branch=master&status=passed
-[appveyor-link]:           https://ci.appveyor.com/project/wjakob/python-example
-<!-- TODO: get a real badge link for appveyor -->
-[appveyor-badge]:          https://travis-ci.org/pybind/pyhaversine.svg?branch=master&status=passed
-
 An simple project built with [pybind11](https://github.com/pybind/pybind11).
 This requires Python 3.6+; for older versions of Python, check the commit
 history.
@@ -69,7 +44,7 @@ Test call
 
 ```python
 import pyhaversine
-pyhaversine.add(1, 2)
+pyhaversine.haversine((1.0, 2.0), (3.0, 4.0))
 ```
 
 [`cibuildwheel`]:          https://cibuildwheel.readthedocs.io
