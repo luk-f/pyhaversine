@@ -1,5 +1,4 @@
-import python_example as m
+import pyhaversine as haversine
 
-assert m.__version__ == '0.0.1'
-assert m.add(1, 2) == 3
-assert m.subtract(1, 2) == -1
+assert haversine.__version__ == '0.0.1'
+assert haversine.haversine((1.0, 2.0), (3.0, 4.0)) == 314491.6589874878

@@ -1,4 +1,4 @@
-python_example
+pyhaversine
 ==============
 
 [![Gitter][gitter-badge]][gitter-link]
@@ -13,18 +13,18 @@ python_example
 
 [gitter-badge]:            https://badges.gitter.im/pybind/Lobby.svg
 [gitter-link]:             https://gitter.im/pybind/Lobby
-[actions-badge]:           https://github.com/pybind/python_example/workflows/Tests/badge.svg
-[actions-conda-link]:      https://github.com/pybind/python_example/actions?query=workflow%3A%22Conda
-[actions-conda-badge]:     https://github.com/pybind/python_example/workflows/Conda/badge.svg
-[actions-pip-link]:        https://github.com/pybind/python_example/actions?query=workflow%3A%22Pip
-[actions-pip-badge]:       https://github.com/pybind/python_example/workflows/Pip/badge.svg
-[actions-wheels-link]:     https://github.com/pybind/python_example/actions?query=workflow%3AWheels
-[actions-wheels-badge]:    https://github.com/pybind/python_example/workflows/Wheels/badge.svg
-[travis-link]:             https://travis-ci.org/pybind/python_example
-[travis-badge]:            https://travis-ci.org/pybind/python_example.svg?branch=master&status=passed
+[actions-badge]:           https://github.com/pybind/pyhaversine/workflows/Tests/badge.svg
+[actions-conda-link]:      https://github.com/pybind/pyhaversine/actions?query=workflow%3A%22Conda
+[actions-conda-badge]:     https://github.com/pybind/pyhaversine/workflows/Conda/badge.svg
+[actions-pip-link]:        https://github.com/pybind/pyhaversine/actions?query=workflow%3A%22Pip
+[actions-pip-badge]:       https://github.com/pybind/pyhaversine/workflows/Pip/badge.svg
+[actions-wheels-link]:     https://github.com/pybind/pyhaversine/actions?query=workflow%3AWheels
+[actions-wheels-badge]:    https://github.com/pybind/pyhaversine/workflows/Wheels/badge.svg
+[travis-link]:             https://travis-ci.org/pybind/pyhaversine
+[travis-badge]:            https://travis-ci.org/pybind/pyhaversine.svg?branch=master&status=passed
 [appveyor-link]:           https://ci.appveyor.com/project/wjakob/python-example
 <!-- TODO: get a real badge link for appveyor -->
-[appveyor-badge]:          https://travis-ci.org/pybind/python_example.svg?branch=master&status=passed
+[appveyor-badge]:          https://travis-ci.org/pybind/pyhaversine.svg?branch=master&status=passed
 
 An example project built with [pybind11](https://github.com/pybind/pybind11).
 This requires Python 3.6+; for older versions of Python, check the commit
@@ -34,7 +34,7 @@ Installation
 ------------
 
  - clone this repository
- - `pip install ./python_example`
+ - `pip install ./pyhaversine`
 
 CI Examples
 -----------
@@ -54,7 +54,7 @@ the extension module to generate beautiful documentation in a variety formats.
 The following command generates HTML-based reference documentation; for other
 formats please refer to the Sphinx manual:
 
- - `cd python_example/docs`
+ - `cd pyhaversine/docs`
  - `make html`
 
 License
@@ -68,8 +68,8 @@ Test call
 ---------
 
 ```python
-import python_example
-python_example.add(1, 2)
+import pyhaversine
+pyhaversine.add(1, 2)
 ```
 
 [`cibuildwheel`]:          https://cibuildwheel.readthedocs.io
