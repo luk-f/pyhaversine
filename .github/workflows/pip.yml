@@ -33,7 +33,7 @@ jobs:
           # Upgrade pip
           python -m pip install --upgrade pip
           # Install build deps
-          python -m pip install setuptools wheel twine
+          python -m pip install setuptools wheel twine pybind11
       - name: "Build a binary wheel and a source tarball and uploads to PyPI"
         run: |
           python setup.py sdist bdist_wheel
