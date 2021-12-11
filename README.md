@@ -1,6 +1,8 @@
 pyHaversine
 ==============
 
+[![PyPI](https://github.com/luk-f/pyhaversine/actions/workflows/pip.yml/badge.svg)](https://github.com/luk-f/pyhaversine/actions/workflows/pip.yml)
+
 An simple project built with [pybind11](https://github.com/pybind/pybind11).
 This requires Python 3.6+; for older versions of Python, check the commit
 history.
@@ -8,16 +10,12 @@ history.
 Installation
 ------------
 
+ - Use `pip install pyhaversine` directly
+
+Or, manually:
+
  - clone this repository
  - `pip install ./pyhaversine`
-
-CI Examples
------------
-
-There are examples for CI in `.github/workflows`. A simple way to produces
-binary "wheels" for all platforms is illustrated in the "wheels.yml" file,
-using [`cibuildwheel`][]. You can also see a basic recipe for building and
-testing in `pip.yml`, and `conda.yml` has an example of a conda recipe build.
 
 
 Building the documentation (no available)
